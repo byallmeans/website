@@ -783,12 +783,24 @@ a[aria-current="page"],
     }
 }
 
-.post-content-footer h3 {
+.post-content-footer h2 {
     margin-top: 0;
 }
 
 .post-content-footer ul li {
     font-family: 'Muli', serif;
+    margin: 0;
+    list-style: square;
+}
+
+@media (min-width: 768px) {
+    .post-content-footer ul li {
+        font-size: 1.7rem;
+    }
+
+    .post-content-footer p {
+        font-size: 1.7rem;
+    }
 }
 
 .footnotes-sep {
@@ -870,6 +882,7 @@ a[aria-current="page"],
     .page-template .post-content-body h2,
     .page-template .post-content-body h3 {
         max-width: 100%;
+        line-height: 1.1em;
     }
 }
 

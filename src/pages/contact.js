@@ -12,11 +12,11 @@ const ContactPage = ({ data }, location) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO title="Contact" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
+      <SEO title="Contact" keywords={[`ian gordon`, `ryan gordon`, `portland`, `pdx`, `pdx design`, `pdx development`, `gamutsf`]} />
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
-          <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
+          <h2>
             Think we'd be a good fit? If you are interested in a new project or collaboration, we’d love to hear from you.
           </h2>
           <div className="row">

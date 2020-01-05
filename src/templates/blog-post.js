@@ -59,14 +59,14 @@ class BlogPostTemplate extends React.Component {
             <div className="row">
               {post.frontmatter.tags && (
               <div className="col-4">
-                <h3>Deliverables</h3>
+                <h2>Deliverables</h2>
                 <TagsList tags={post.frontmatter.tags} />
               </div>
               )}
 
               {post.frontmatter.collaboration && (
               <div className="col-8">
-                <h3>Collaborators</h3>
+                <h2>Collaborators</h2>
                 <p>{post.frontmatter.collaboration}</p>
               </div>
               )}

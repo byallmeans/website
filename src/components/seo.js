@@ -33,7 +33,8 @@ function SEO({ description, lang, meta, keywords, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      defaultTitle={`${site.siteMetadata.title} | Design & Development in Portland, OR`}
+      titleTemplate={`%s | ${site.siteMetadata.title}`} 
       meta={[
         {
           name: `description`,

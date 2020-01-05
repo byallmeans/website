@@ -2,8 +2,10 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import Helmet from 'react-helmet'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import {TagsList} from "../components/tagsList"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -12,6 +14,17 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <Helmet
+          style={[{
+              "cssText": `
+                  body {
+                      --postBackground:${post.frontmatter.bgcolor || `#ffffff`};
+                      --postText:${post.frontmatter.textcolor || `#808080`};
+                      --logoColor:${post.frontmatter.logocolor || `green`};
+                  }
+              `
+          }]}
+        />
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -24,7 +37,7 @@ class BlogPostTemplate extends React.Component {
           </header>
 
           {post.frontmatter.description && (
-            <p class="post-content-excerpt">{post.frontmatter.description}</p>
+            <p className="post-content-excerpt">{post.frontmatter.description}</p>
           )}
 
           {post.frontmatter.thumbnail && (
@@ -43,10 +56,21 @@ class BlogPostTemplate extends React.Component {
           />
 
           <footer className="post-content-footer">
-            {/* There are two options for how we display the byline/author-info.
-        If the post has more than one author, we load a specific template
-        from includes/byline-multiple.hbs, otherwise, we just use the
-        default byline. */}
+            <div className="row">
+              {post.frontmatter.tags && (
+              <div className="col-4">
+                <h3>Deliverables</h3>
+                <TagsList tags={post.frontmatter.tags} />
+              </div>
+              )}
+
+              {post.frontmatter.collaboration && (
+              <div className="col-8">
+                <h3>Collaborators</h3>
+                <p>{post.frontmatter.collaboration}</p>
+              </div>
+              )}
+            </div>           
           </footer>
         </article>
       </Layout>
@@ -70,8 +94,13 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date
         description
+        tags
+        collaboration
+        bgcolor
+        textcolor
+        logocolor
         thumbnail {
           childImageSharp {
             fluid(maxWidth: 1360) {

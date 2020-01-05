@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 export default props => (
   <article
-    className={`post-card ${props.count % 3 === 0 && `post-card-large`} ${
+    className={`post-card ${props.count % 3 === 0 && `post-card-jumbo`} ${
       props.postClass
     } ${props.node.frontmatter.thumbnail ? `with-image` : `no-image`}`}
     style={

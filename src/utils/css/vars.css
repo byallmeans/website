@@ -6,13 +6,13 @@
 :root {
 
     /* Colours */
-    --color-primary: #3eb0ef;
-    --color-base: #131313;
+    --color-primary: #008000;
+    --color-base: #808080; /*131313 */
     --color-border: #ddd;
     --color-bg: #f8f8f8;
 
     /* Fonts */
-    --font-sans-serif: 'Muli', sans-serif;
+    --font-sans-serif: 'WayfinderCF-Thin', serif;
     --font-serif: Georgia, Times, serif;
     --font-mono: Menlo, Courier, monospace;
     --font-light: 100;

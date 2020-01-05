@@ -86,6 +86,13 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-htaccess',
+      options: {
+        https: true,
+        www: false,
+      },
+    },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,

@@ -2,7 +2,7 @@
 title: Tikva
 date: "2019-25-11"
 thumbnail: ./Tikva_StillLife_220-v1573070482927.jpg
-description: We worked with the nice folks at Tikva to design and developed a site and ecommerce solution for their CBD health and wellness products.
+description: We worked with the nice folks at Tikva to design and develop a site and ecommerce solution for their CBD health and wellness products.
 tags:
   - Visual Design
   - Front-end Development

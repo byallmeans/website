@@ -7,7 +7,7 @@ tags:
   - Visual Identity
   - Packaging
   - Print Collateral
-collaboration: ""
+collaboration: "In partnership with Kevin Landwehr"
 bgcolor: "#ff8200"
 textcolor: "#231f20"
 logocolor: "#ffffff"

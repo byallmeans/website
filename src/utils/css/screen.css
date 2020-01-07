@@ -99,6 +99,11 @@ body {
         padding: 6vw;
     }
 }
+@media (max-width: 500px) {
+    .site-wrapper {
+        padding: 4vw;
+    }
+}
 
 main {
   flex: 1;

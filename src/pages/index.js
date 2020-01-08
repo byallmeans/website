@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostCard from "../components/postCard"
 
-// import "../utils/global.scss"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
@@ -20,7 +19,6 @@ const BlogIndex = ({ data }, location) => {
         title=""
         keywords={[`by all means`, `ian gordon`, `ryan gordon`, `pdx design`, `pdx web development`, `gamutsf`]}
       />
-      {/* <Bio /> */}
       {data.site.siteMetadata.description && (
         <header className="page-head">
           <h2 className="page-head-title">

@@ -4,9 +4,6 @@ import { graphql, StaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import "../utils/normalize.css"
-import "../utils/css/screen.css"
-
 const ContactPage = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
 

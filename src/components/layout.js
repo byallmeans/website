@@ -1,6 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import "../utils/normalize.css"
+import "../utils/css/screen.css"
+
 const Layout = props => {
   const { title, children } = props
   const [toggleNav, setToggleNav] = React.useState(false)
@@ -30,7 +33,7 @@ const Layout = props => {
                 <Link to={`/`}>Work</Link>
               </li>
               <li className="nav-about" role="menuitem">
-                <Link to={`/about`}>About</Link>
+                <Link to={`/about/`}>About</Link>
               </li>
             </ul>
           </nav>
@@ -42,7 +45,7 @@ const Layout = props => {
           <div className="site-head-right">
             <ul className="nav" role="menu">
               <li className="nav-contact" role="menuitem">
-                <Link to={`/contact`}>Contact</Link>
+                <Link to={`/contact/`}>Contact</Link>
               </li>
             </ul>
           </div>

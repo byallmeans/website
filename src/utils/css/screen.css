@@ -785,6 +785,8 @@ a[aria-current="page"],
         max-width: 1360px;
         width: auto;
         height: auto;
+        margin: 0 auto;
+        display: block;
     }
 }
 

@@ -37,7 +37,7 @@ module.exports = {
               withWebp: true,
               showCaptions: false,
               quality: 80,
-              wrapperStyle: `margin: 7vw 0;`,
+              wrapperStyle: `margin: 7vw auto;`,
               linkImagesToOriginal: false,
               backgroundColor: `transparent`,
               disableBgImageOnAlpha: true

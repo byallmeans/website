@@ -777,7 +777,12 @@ a[aria-current="page"],
 .post-content-body img {
     max-width: 1360px;
     width: 100%;
-    height: auto;
+    height: auto;  
+}
+
+.post-content-body span > img {
+    transform: translateX(-50%);
+    left: 50% !important;
 }
 
 @media (min-width: 1532px) {

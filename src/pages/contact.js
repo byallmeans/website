@@ -25,7 +25,7 @@ const ContactPage = ({ data }, location) => {
                 }}
               >
                 <p>{siteTitle} is located in the vibrant SE of Portland, Oregon in the Pacific Northwest of the United States of America on the planet Earth.</p>
-                <p>Our current project start date is February 2020. Our minimum project commitment is 4 weeks.</p>
+                <p>Our current project start date is April 2020. Our minimum project commitment is 4 weeks.</p>
               </div>
             </div>
             <div className="col-4">

@@ -5,8 +5,13 @@ production stylesheet in assets/built/screen.css using gulp dev
 
 */
 
+/* Lib - External font imports
+/* ---------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
 /* Lib - Local component imports
 /* ---------------------------------------------------------- */
+
 @import "vars.css";
 @import "components/global.css";
 @import "components/ghost.css";
@@ -241,7 +246,8 @@ main {
     margin: 0;
     padding: 10px 12px;
     color: var(--postText);
-    font-weight: 600;
+    font-family: 'WayfinderCF-Light', serif;
+    font-weight: 400;
     opacity: 0.8;
 }
 

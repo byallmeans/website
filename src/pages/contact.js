@@ -5,7 +5,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const ContactPage = ({ data }, location) => {
-  const siteTitle = data.site.siteMetadata.title
+  const siteTitle = data.site.siteMetadata.title;
+
+  let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const projectStartMonth = monthNames[ (new Date().getMonth()+1)%12 ];
+  const projectStartYear = projectStartMonth === 12 ? new Date().getFullYear()+1 : new Date().getFullYear();
 
   return (
     <Layout title={siteTitle}>
@@ -25,7 +29,7 @@ const ContactPage = ({ data }, location) => {
                 }}
               >
                 <p>{siteTitle} is located in the vibrant SE of Portland, Oregon in the Pacific Northwest of the United States of America on the planet Earth.</p>
-                <p>Our current project start date is April 2020. Our minimum project commitment is 4 weeks.</p>
+                <p>Our current project start date is { projectStartMonth } { projectStartYear }. Our minimum project commitment is 4 weeks.</p>
               </div>
             </div>
             <div className="col-4">

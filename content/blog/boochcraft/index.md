@@ -14,7 +14,7 @@ textcolor: "#f5efdf"
 logocolor: "#dada21"
 ---
 
-![Tikva](./booch-1.png)
-![Tikva](./booch-2.png)
-![Tikva](./booch-4up.png) 
-![Tikva](./booch-2up.png)
+![Boochcraft](./booch-1.png)
+![Boochcraft](./booch-2.png)
+![Boochcraft](./booch-4up.png) 
+![Boochcraft](./booch-2up.png)

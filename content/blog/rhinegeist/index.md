@@ -5,8 +5,8 @@ thumbnail: ./Rhinegeist-Cover.jpg
 description: Rhinegeists brand is bold and playful. Our goal was to maintain that brand clarity and capture and convey their spirit and energy, while also keeping things simple and easy to use.
 tags:
   - Visual Design
-  - Front-end Development
-  - Back-end Development
+  - Front-end Development (Vue)
+  - Back-end Development (Wordpress CMS)
   - E-commerce (Shopify)
 collaboration: ""
 bgcolor: "#001b2e"

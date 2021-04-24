@@ -42,11 +42,10 @@ class BlogPostTemplate extends React.Component {
 
           {post.frontmatter.thumbnail && (
             <div className="post-content-image">
-              <Img
-                className="kg-image"
-                fluid={post.frontmatter.thumbnail.childImageSharp.fluid}
-                alt={post.frontmatter.title}
-              />
+              {post.frontmatter.thumbnail.extension === 'mp4'
+                ? <video muted autoPlay loop src={post.frontmatter.thumbnail.publicURL} />
+                : <Img className="kg-image" fluid={post.frontmatter.thumbnail.childImageSharp.fluid} alt={post.frontmatter.title} />
+              }
             </div>
           )}
 
@@ -58,7 +57,7 @@ class BlogPostTemplate extends React.Component {
           <footer className="post-content-footer">
             <div className="row">
               {post.frontmatter.tags && (
-              <div className="col-4">
+              <div className="col">
                 <h2>Deliverables</h2>
                 <TagsList tags={post.frontmatter.tags} />
               </div>
@@ -102,6 +101,8 @@ export const pageQuery = graphql`
         textcolor
         logocolor
         thumbnail {
+          extension
+          publicURL
           childImageSharp {
             fluid(maxWidth: 1360) {
               ...GatsbyImageSharpFluid

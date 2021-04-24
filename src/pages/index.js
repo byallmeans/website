@@ -61,6 +61,8 @@ const indexQuery = graphql`
             title
             description
             thumbnail {
+              extension
+              publicURL
               childImageSharp {
                 fluid(maxWidth: 1360) {
                   ...GatsbyImageSharpFluid

@@ -6,7 +6,7 @@ description: San Francisco Health Plan is the leading provider of Medi-Cal insur
 tags:
   - Visual Design
   - Front-end Development
-  - Back-end Development
+  - Back-end Development (Wordpress CMS)
 collaboration: ""
 bgcolor: "#00a0df"
 textcolor: "#ffffff"

@@ -17,7 +17,7 @@ export default props => (
     </Link>
     <div className="post-card-bg">
       {props.node.frontmatter.thumbnail.extension === 'mp4'
-        ? <video autoPlay playsInline muted loop src={props.node.frontmatter.thumbnail.publicURL} />
+        ? <video autoPlay playsInline loop muted={true} src={props.node.frontmatter.thumbnail.publicURL} />
         : <Img className="kg-image" fluid={props.node.frontmatter.thumbnail.childImageSharp.fluid} alt={props.node.frontmatter.title} />
       }
     </div>

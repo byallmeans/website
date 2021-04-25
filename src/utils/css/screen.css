@@ -616,6 +616,11 @@ a[aria-current="page"],
     height: 100%;
 }
 
+.post-card-bg .video-container {
+    width: 100%;
+    height: 100%;
+}
+
 .post-card-bg img,
 .post-card-bg video,
 .post-card-bg object {

@@ -43,7 +43,7 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.thumbnail && (
             <div className="post-content-image">
               {post.frontmatter.thumbnail.extension === 'mp4'
-                ? <video muted autoPlay loop src={post.frontmatter.thumbnail.publicURL} />
+                ? <video muted autoPlay playsInline loop src={post.frontmatter.thumbnail.publicURL} />
                 : <Img className="kg-image" fluid={post.frontmatter.thumbnail.childImageSharp.fluid} alt={post.frontmatter.title} />
               }
             </div>

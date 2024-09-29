@@ -57,7 +57,14 @@ const Layout = props => {
         </div>
       </main>
       <footer className="site-foot">
-        Copyright {new Date().getFullYear()} &mdash; <a href="https://instagram.com/byallmeanstogo" target="_blank" rel="noopener noreferrer">Instagram</a> • <a href="https://twitter.com/byallmeanstogo" target="_blank" rel="noopener noreferrer">Twitter</a> • <a href="https://dribbble.com/byallmeans" target="_blank" rel="noopener noreferrer">Dribbble</a>
+        Copyright {new Date().getFullYear()} By All Means &mdash;{" "}
+        <a
+          href="https://instagram.com/byallmeanstogo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
       </footer>
     </div>
   )
